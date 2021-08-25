@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define pi 3,1415
+#define pi 3.1415
 
 int main() {
     float raio;
@@ -8,10 +8,8 @@ int main() {
     printf("Nos de o valor de R: ");
     scanf("%f",&raio);
 
-    printf("%f",pi);
+    perimetro = (2 * pi) * raio;
 
-    perimetro = 2 * pi;
-    perimetro = perimetro * raio;
 
     printf("O valor do perimetro eh: %f", perimetro);
 
