@@ -1,3 +1,12 @@
+/*
+1. Suponha que a turma da disciplina de programacao I do curso de Ciencia da Computacao
+tenha feito uma prova final. Faca um programa que leia a quantidade de alunos na turma,
+em seguida, calcule e mostre:
+• o n ́umero de alunos aprovados na disciplina;
+• a m ́edia obtida pela turma;
+• o percentual de alunos que ficaram de exame na disciplina;
+• o percentual de alunos que reprovaram na disciplina.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
