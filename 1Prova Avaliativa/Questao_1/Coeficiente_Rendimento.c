@@ -1,3 +1,15 @@
+/*
+1. [2,0] O Coeficiente de Rendimento (CR) do aluno corresponde a media de todas as suas
+notas nas disciplinas cursadas por ele. Implemente um programa que calcule e mostre o
+CR atual dos alunos do curso de Ciˆencia da Computacao da UENP. Para cada aluno, o
+programa deve ler o numero de matrıcula do aluno (1 ≤ n ́umero de matricula ≤ 1000), as
+disciplinas cursadas (considere que aluno tenha cursado 10 disciplinas) e as notas obtidas.
+Por fim, o programa deve exibir:
+a. A matrıcula do aluno, juntamente com as notas obtidas nas disciplinas e o CR devidamente
+calculado;
+b. A media aritmetica das notas obtidas, excluindo se a menor e a maior nota;
+c. O melhor CR dos alunos do curso.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
