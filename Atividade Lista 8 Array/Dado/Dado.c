@@ -7,13 +7,14 @@ lancamentos dos dados.
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define MAX 100
 
 int main()
 {
-    int vet[100];
-    int i;
+    int vet[MAX]={0};
     int count1, count2, count3, count4, count5, count6;
 
+   
     count1 = 0;
     count2 = 0;
     count3 = 0;
@@ -21,12 +22,13 @@ int main()
     count5 = 0;
     count6 = 0;
 
-    for(i=1 ; i <= 100 ; i++){
-        vet[i] = 1+rand() % 6;
+    for(int i=0 ; i <= MAX ; i++){
+
+        vet[i] = rand()%6+1;
     }
 
-    for(int i = 0; i < 100; i++){
-
+    for(int i = 0; i < MAX; i++){
+        printf("%d\n",vet[i]);
         switch(vet[i]){
             case 1:
                 count1++;
@@ -46,14 +48,15 @@ int main()
             case 6:
                 count6++;
             break;
+
         }
     }
 
-    printf("%d\n",count1);
-    printf("%d\n",count2);
-    printf("%d\n",count3);
-    printf("%d\n",count4);
-    printf("%d\n",count5);
-    printf("%d\n",count6);
+    printf("O Dado foi lancado e saiu o numero 1: %d\n",count1);
+    printf("O Dado foi lancado e saiu o numero 2: %d\n",count2);
+    printf("O Dado foi lancado e saiu o numero 3: %d\n",count3);
+    printf("O Dado foi lancado e saiu o numero 4: %d\n",count4);
+    printf("O Dado foi lancado e saiu o numero 5: %d\n",count5);
+    printf("O Dado foi lancado e saiu o numero 6: %d\n",count6);
     return 0;
 }
