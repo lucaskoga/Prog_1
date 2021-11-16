@@ -11,7 +11,7 @@ um vetor. Por fim, o programa deve imprimir o vetor resultante.
 int main()
 {
     //Criacao da MAtriz e do vetor inicalizando as posicão com 0
-    int matriz[3][5] = {0};
+    int matriz[LIN][COL]= {0};
     int vetorColuna[10]={0};
     int somaColuna;
 
