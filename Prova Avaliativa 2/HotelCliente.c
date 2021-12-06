@@ -28,14 +28,14 @@ void clienteHotel(int apartamento, int diasReserva,int client){
             desconto = 380.00 * 0.7;
             desconto = desconto / 100;
             valorPagar = valorPagar - desconto;
-            printf("Apartamento Standard valor da reserva a pagar %.2lf",valorPagar);
+            printf("Apartamento Master valor da reserva a pagar %.2lf",valorPagar);
         }
         else {
             if(diasReserva > 3){
             desconto = 380.00 * 10;
             desconto = desconto / 100;
             valorPagar = valorPagar - desconto;
-            printf("Apartamento Standard valor da reserva a pagar %.2lf",valorPagar);
+            printf("Apartamento Master valor da reserva a pagar %.2lf",valorPagar);
 
             }
         }
@@ -45,19 +45,19 @@ void clienteHotel(int apartamento, int diasReserva,int client){
             desconto = 550.00 * 0.7;
             desconto = desconto / 100;
             valorPagar = valorPagar - desconto;
-            printf("Apartamento Standard valor da reserva a pagar %.2lf",valorPagar);
+            printf("Apartamento Deluxe valor da reserva a pagar %.2lf",valorPagar);
         }
         else {
             if(diasReserva > 3){
             desconto = 550.00 * 10;
             desconto = desconto / 100;
             valorPagar = valorPagar - desconto;
-            printf("Apartamento Standard valor da reserva a pagar %.2lf",valorPagar);
+            printf("Apartamento Deluxe valor da reserva a pagar %.2lf",valorPagar);
 
             }
         }
 
-         printf("Apartamento Standard valor da reserva a pagar %.2lf",valorPagar);
+         printf("Todos os apartamento tem o seguinte valor da reserva a pagar %.2lf",valorPagar);
     }
 }
 int main()
