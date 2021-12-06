@@ -5,6 +5,7 @@ void clienteHotel(int apartamento, int diasReserva,int client){
     double valorPagar = 0;
     double desconto = 0;
     switch(apartamento){
+     //Standard
     case 101:
         valorPagar = diasReserva * 220.00;
         if(client == 1 ){
@@ -22,6 +23,7 @@ void clienteHotel(int apartamento, int diasReserva,int client){
 
             }
         }
+     //Master
     case 102:
         valorPagar = diasReserva * 380.00;
         if(client == 1 ){
@@ -39,6 +41,7 @@ void clienteHotel(int apartamento, int diasReserva,int client){
 
             }
         }
+     //Delux
     case 201:
         valorPagar = diasReserva * 550.00;
         if(client == 1 ){
