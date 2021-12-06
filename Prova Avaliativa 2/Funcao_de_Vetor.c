@@ -40,9 +40,7 @@ void diferenca(int vetX[],int vetY[],int tam){
             if(vetX[x] == vetY[y]){
                 count++;
             }
-            else {
-                printf("O vetor X nao possui nem um elemento igual no vetor Y\n");
-            }
+
         }
     }
     printf("Total de vezes que o vetor x foi igual que o vetor y: %d",count);
@@ -57,13 +55,22 @@ void uniaoVetor(int vetX[],int vetY[],int tam){
                 count++;
                }
             }
-            else {
-                printf("O vetor X nao possui nem um elemento igual no vetor Y\n");
-            }
+
         }
     }
     printf("Total de vezes que o vetor x foi igual que o vetor y: %d\n",count);
 
+}
+void intercecaoVetor(int vetX[],int vetY[],int tam){
+    int vetorIgual[MAX]={0};
+    for(int i = 0; i < MAX; i++){
+        if(vetX[i] == vetY[i]){
+            vetorIgual[i] = vetX[i];
+        }
+    }
+     for(int i = 0; i < MAX; i++){
+        printf("Resultado armazenado no vetor igual  eh %d: %d\n",i +1,vetorIgual[i]);
+    }
 }
 
 int main()
@@ -89,6 +96,8 @@ int main()
     diferenca(vetX,vetY,MAX);
     printf("\nFuncao de uniao\n");
     uniaoVetor(vetX,vetY,MAX);
+    printf("\nFuncao intercecao\n");
+    intercecaoVetor(vetX,vetY,MAX);
 
     return 0;
 }
