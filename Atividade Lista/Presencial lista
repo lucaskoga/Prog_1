@@ -123,3 +123,31 @@ int main()
     return 0;
 }
 
+resposta questao 9;
+
+ #include <stdio.h>
+#include <stdlib.h>
+int calcularTotal(char *str){
+    int count = 0;
+    while(*str != '\0'){
+        if(*str == ' '){
+            count++;
+        }
+        *str++;
+    }
+    return ++count;
+}
+int main()
+{
+    char texto[100];
+    int *pc = texto;
+    int tam;
+
+    fgets(pc,100,stdin);
+
+    tam = calcularTotal(pc);
+
+    printf("%d", tam);
+
+    return 0;
+}
